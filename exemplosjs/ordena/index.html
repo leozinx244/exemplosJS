@@ -1,0 +1,47 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Ordenação</title>
+  
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.css'>
+    <link rel="stylesheet" href="style.css">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/inputmask/inputmask.js'></script>
+    <script src="index.js"></script>
+  
+  </head>
+  
+  <body>
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="valor">Adicione um numero:</label>
+          <input type="number" class="form-control" id="valor">
+          <small id="valorAjuda" class="form-text text-muted"></small>
+        </div>
+        
+        <button type="button" class="btn btn-sm btn-primary mb-4" onclick="add()">Adicionar</button>
+        
+        <ul id="valores">
+        </ul>
+        
+        <div class="form-group">
+          <label for="exampleInputPassword1">Selecione o metodo de Ordenação</label>
+          <select  class="form-control" id="sort">
+            <option selected value="blubble">Blubble Sort</option>
+            <option value="selection">Selection Sort</option>
+            <option value="quick">QuickSort</option>
+          </select>
+        </div>
+        
+        <button type="button" class="btn btn-sm btn-primary" onclick="ordenar()">Ordenar</button>
+        <button type="button" class="btn btn-sm btn-primary" onclick="misturar()">Misturar</button>
+        
+      </form>
+  
+    </div>
+  
+  </body>
+  
+  </html>
